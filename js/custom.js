@@ -3,7 +3,8 @@ window.custom_data['scrolled_elements'] = [];
 
 // функция проверки полной видимости элемента
 function checkPosition(el) {
-    if (window.custom_data['scrolled_elements'].includes(el.attr('id'))) { return }
+    id = el.attr('id');
+    if (window.custom_data['scrolled_elements'].includes(id)) { return }
     //console.log('checking element', el);
 
     // координаты дива
@@ -47,11 +48,12 @@ function checkPosition(el) {
         //el.css({'background-color': 'green'});
         conversion_id = el.data('conversion-id');
         console.log('visible ', el, conversion_id);
-        window.custom_data['scrolled_elements'].push(el.attr('id'));
+        window.custom_data['scrolled_elements'].push(id);
 
         gtag('event', 'conversion', {
             'send_to': conversion_id
         });
+        ym(1926511, 'reachGoal', 'scrolled-to-' + id);
 
     } else {
         // если не виден
