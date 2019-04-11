@@ -67,6 +67,15 @@ function checkElementsVisible() {
 
 (function ($) {
 
+    $("[data-conversion-click-id]").on('click', function(event){
+        el = $(event.target);
+        id = el.attr('id');
+        conversion_id = el.data('conversion-click-id');
+        console.log(event, conversion_id);
+        gtag('event', 'conversion', { 'send_to': conversion_id });
+        ym(1926511, 'reachGoal', 'click-to-' + id);
+    });
+
     $(document).scroll(function () {
         // при скролле страницы делаем проверку
         checkElementsVisible();
