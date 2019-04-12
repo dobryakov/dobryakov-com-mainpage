@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
 <head>
 
@@ -44,6 +44,14 @@
     section {
       padding-top:    50px;
       padding-bottom: 50px;
+    }
+    .custom-service-block {
+      border-bottom: 1px lightgray solid;
+      margin-bottom: 30px;
+    }
+    .custom-service-block-pricing {
+      font-size: 200%;
+      line-height: 120%;
     }
   </style>
 
@@ -105,23 +113,29 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
+          <!--<li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#problems">Проблемы</a>
+          </li>-->
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#experience">Кто</a>
+            <a class="nav-link js-scroll-trigger" href="#solutions">Решения</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#business">Что делаю</a>
+            <a class="nav-link js-scroll-trigger" href="#experience">Кто я</a>
           </li>
-          <li class="nav-item">
+          <!--<li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#business">Что</a>
+          </li>-->
+          <!--<li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#appropriate">Кому</a>
-          </li>
+          </li>-->
           <!--<li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
           </li>-->
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#process">Как</a>
+            <a class="nav-link js-scroll-trigger" href="#process">Процесс</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#pricing">Цены</a>
+            <a class="nav-link js-scroll-trigger" href="#booking">Забронировать</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#team">Партнёры</a>
@@ -140,11 +154,12 @@
       <div class="intro-text">
         <div class="intro-lead-in"><img class="rounded-circle img-fluid" src="img/face-in-round.jpg" style="height: 100px; border: 3px white solid;"></div>
         <div class="intro-heading text-uppercase">Помогаю IT-проектам взять новую высоту</div>
-        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#about">Узнать, как</a>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#problems">Узнать, как</a>
       </div>
     </div>
   </header>
 
+<!--
   <section class="bg-light" id="about">
     <div class="container">
       <div class="row custom-section-header">
@@ -167,13 +182,253 @@
       </div>
     </div>
   </section>
+  -->
 
-  <section class="" id="experience" style="padding-bottom: 10px;">
+  <section class="" id="problems">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Типовые проблемы в IT-проектах</h2>
+          <h3 class="section-subheading text-muted"></h3>
+        </div>
+      </div>
+      <div class="row text-left">
+        <div class="col-md-4">
+          <h5 class="service-heading">Ломается то, что уже чинили. И&nbsp;вообще часто ломается.</h5>
+        </div>
+        <div class="col-md-4">
+          <h5 class="service-heading">Постоянная головная боль с&nbsp;настройками серверов и&nbsp;рабочих мест.</h5>
+        </div>
+        <div class="col-md-4">
+          <h5 class="service-heading">Об ошибках узнаём от&nbsp;клиентов и&nbsp;партнёров.</h5>
+        </div>
+      </div>
+      <div class="row text-left">
+        <div class="col-md-4">
+          <h5 class="service-heading">В методиках, процессах и&nbsp;инструментах часто изобретаем велосипед.</h5>
+        </div>
+        <div class="col-md-4">
+          <h5 class="service-heading">Гуманитарии и технари разделяются на&nbsp;два враждующих лагеря.</h5>
+        </div>
+        <div class="col-md-4">
+          <h5 class="service-heading">Не на кого положиться. Приходится контролировать даже мелочи.</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-light" id="solutions">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Решения</h2>
+          <div class="section-icon"><i class="fas fa-tools fa-stack-2x text-primary"></i></div>
+          <!--<h3 class="section-subheading text-muted"></h3>-->
+        </div>
+      </div>
+      <div class="row text-left">
+        <div class="col-md-5 custom-service-block">
+          <h5 class="service-heading">Пакет &laquo;Продукт без багов&raquo;</h5>
+          <p>
+            <strong>Какую проблему решает:</strong>
+            В&nbsp;вашем продукте много ошибок.
+            Одни и те же ошибки повторяются.
+            Много времени и денег теряется на исправление вместо развития.
+          </p>
+          <p>
+            <strong>Процесс:</strong>
+            Изучаем инструменты и&nbsp;методики тестирования.
+            Вводим метрики, показывающие фактические улучшения.
+            Пишем тесты.
+            Настраиваем процесс continuous integration для их&nbsp;регулярного запуска и&nbsp;отчётности.
+          </p>
+          <p>
+            <strong>Результаты:</strong>
+            Вы обретаете уверенность в&nbsp;качестве и&nbsp;стабильности  продукта.
+            На каждую презентацию вы&nbsp;едете без&nbsp;страха.
+          </p>
+          <p class="text-success custom-service-block-pricing">
+            50&nbsp;000 рублей в&nbsp;месяц.
+            <br>
+            Рассчитано на&nbsp;1-2&nbsp;месяца.
+          </p>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-5 custom-service-block">
+          <h5 class="service-heading">Пакет &laquo;Управление конфигурацией&raquo;</h5>
+          <p>
+            <strong>Какую проблему решает:</strong>
+            У вас возникает множество проблем от&nbsp;разницы в&nbsp;настройках серверов.
+            Настройка сервера, VDS или компьютера сотрудника выглядит неправдоподобно сложной.
+            Существует множество инструкций о&nbsp;настройках, которые теряются или&nbsp;устаревают.
+            Сисадмин внедряет инструменты, которыми непонятно как&nbsp;пользоваться.
+          </p>
+          <p>
+            <strong>Процесс:</strong>
+            Выбираем и&nbsp;внедряем систему управления конфигурацией, и&nbsp;учимся ей&nbsp;пользоваться на&nbsp;практике.
+          </p>
+          <p>
+            <strong>Результаты:</strong>
+            В средах и&nbsp;окружениях наведён порядок.
+            Изменения конфигурации превратились из&nbsp;хаотичных в&nbsp;системные.
+            Настройки рабочих мест стали одинаковыми.
+            Сотрудники больше не&nbsp;теряют время на&nbsp;перенастройку.
+          </p>
+          <p class="text-success custom-service-block-pricing">
+            50&nbsp;000 рублей в&nbsp;месяц
+            <br>
+            Рассчитано на 1-2&nbsp;месяца
+          </p>
+        </div>
+      </div>
+      <div class="row text-left">
+        <div class="col-md-5 custom-service-block">
+          <h5 class="service-heading">Пакет &laquo;Мониторинг ошибок&raquo;</h5>
+          <p>
+            <strong>Какую проблему решает:</strong>
+            Вы узнаёте о&nbsp;проблемах от&nbsp;клиентов или&nbsp;партнёров. Ошибки, возможно, пишутся в&nbsp;лог, но&nbsp;его&nbsp;никто не&nbsp;анализирует.
+            Иногда бывает, что какой-то сервис вообще лежит, а&nbsp;вы&nbsp;узнаёте об&nbsp;этом спустя часы или&nbsp;дни.
+          </p>
+          <p>
+            <strong>Процесс:</strong>
+            Подключаем систему аналитики ошибок.
+            Настраиваем репортинг в&nbsp;командный чат.
+            Выявляем ключевые точки отказов, устанавливаем систему мониторинга и&nbsp;настраиваем её&nbsp;на&nbsp;эти&nbsp;точки.
+            Настраиваем репортинг на&nbsp;разных ответственных лиц в&nbsp;зависимости от&nbsp;типа ошибки, времени суток и&nbsp;дня&nbsp;недели.
+          </p>
+          <p>
+            <strong>Результаты:</strong>
+            Вы&nbsp;спокойно спите.
+            Ответственные сотрудники получают целевые уведомления.
+            Проблемы исправляются моментально.
+          </p>
+          <p class="text-success custom-service-block-pricing">
+            25&nbsp;000 рублей.
+          </p>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-5 custom-service-block">
+          <h5 class="service-heading">Пакет &laquo;Фундамент&raquo;</h5>
+          <p>
+            <strong>Какую проблему решает:</strong>
+            Как построить эффективное производство IT-продукта, наладить контакт между саппортом, маркетингом и&nbsp;разработчиками, эффективно вести клиентов.
+          </p>
+          <p>
+            Это вводный курс по&nbsp;базовым инструментам и&nbsp;методикам. Вы&nbsp;освоите и&nbsp;станете очень эффективно использовать:
+          </p>
+          <ul style="font-size: 90%;">
+            <li>Командный чат.</li>
+            <li>Таск-менеджер / багтрекер.</li>
+            <li>Customer service desk (система трекинга обращений в&nbsp;техподдержку).</li>
+            <li>CRM (система ведения взаимоотношений с&nbsp;клиентами).</li>
+            <li>IP-телефония.</li>
+            <li>Сервис ручных и автоматических рассылок.</li>
+            <li>Хранилище git-репозиториев.</li>
+            <li>Основные приёмы код-ревью.</li>
+            <li>Методика feature branches.</li>
+            <li>Автоматизированное тестирование.</li>
+            <li>Continuous integration.</li>
+          </ul>
+          <p class="text-success custom-service-block-pricing">
+            50&nbsp;000 рублей в&nbsp;месяц.
+            <br>
+            Рассчитано на&nbsp;1-2&nbsp;месяца.
+          </p>
+        </div>
+      </div>
+      <div class="row text-left">
+        <div class="col-md-5 custom-service-block">
+          <h5 class="service-heading">Пакет &laquo;Гуманитарий ставит задачи программистам&raquo;</h5>
+          <p>
+            <strong>Какую проблему решает:</strong>
+            Вечный пинг-понг задач между менеджером и&nbsp;разработчиком.
+            Разработчики жалуются, что&nbsp;задача поставлена непонятно.
+            При ручном тестировании выясняется, что&nbsp;сделали совсем не&nbsp;то, что&nbsp;просили.
+          </p>
+          <p>
+            Этот курс — серия практических занятий с&nbsp;разбором ваших конкретных задач, которые вы&nbsp;ставите в&nbsp;реальную работу в&nbsp;настоящее время.
+          </p>
+          <p>
+            <strong>Результаты:</strong>
+            Ваши менеджеры научатся проектировать и&nbsp;ставить задачи однозначно, таким образом, чтобы разработчики воспринимали их&nbsp;как готовое руководство к&nbsp;действию.
+            Вы перестанете терять время и&nbsp;нервы на&nbsp;постоянных дискуссиях в&nbsp;чате и&nbsp;комментариях.
+          </p>
+          <p class="text-success custom-service-block-pricing">
+            50&nbsp;000 рублей.
+          </p>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-5 custom-service-block">
+          <h5 class="service-heading">Пакет &laquo;Командная культура&raquo;</h5>
+          <p>
+            <strong>Какую проблему решает:</strong>
+            Сотрудники не&nbsp;вовлечены в&nbsp;работу и&nbsp;не&nbsp;разделяют миссию продукта.
+            Непонятно, кто&nbsp;чем&nbsp;занят, коллектив выглядит непрозрачным и&nbsp;неуправляемым.
+            Возникают сложности с&nbsp;делегированием, никто не&nbsp;хочет брать на&nbsp;себя ответственность.
+            Разработчики отрицают бизнесовые приоритеты и&nbsp;сосредоточены на&nbsp;производстве.
+            В&nbsp;команде выражен недостаток взаимоуважения и&nbsp;поддержки.
+          </p>
+          <p>
+            Это самый сложный курс, в&nbsp;рамках которого мы&nbsp;с&nbsp;вами поработаем с&nbsp;мотивацией каждого сотрудника.
+            Отфильтруем тех, кто не готов меняться, и&nbsp;подготовим им&nbsp;замену.
+            Поможем продвинуться и&nbsp;раскрыться позитивно настроенным членам команды.
+            Научимся конструктивно спорить и&nbsp;решать конфликты.
+          </p>
+          <p>
+            <strong>Результаты:</strong>
+            Эффективная работа команды в&nbsp;дружественной, позитивной атмосфере.
+            Сотрудники, разделяющие вашу миссию, и&nbsp;готовые ежедневно достигать и&nbsp;добиваться.
+          </p>
+          <p class="text-success custom-service-block-pricing">
+            50&nbsp;000 рублей в&nbsp;месяц.
+            <br>
+            Рассчитано на&nbsp;6&nbsp;месяцев.
+          </p>
+        </div>
+      </div>
+      <div class="row text-left">
+        <div class="col-md-4 ">
+          <h5 class="service-heading">Пакет &laquo;Найм лучших&raquo;</h5>
+          <p>
+            Я провожу собеседования ваших кандидатов вместо вас, либо вместе с&nbsp;вами. По каждому даю развёрнутый фидбэк и&nbsp;рекомендации.
+          </p>
+          <p class="text-success custom-service-block-pricing">
+            25&nbsp;000 рублей в&nbsp;месяц.
+            До 20 собеседований.
+          </p>
+        </div>
+        <div class="col-md-4 ">
+          <h5 class="service-heading">Пакет &laquo;Стратегия продаж&raquo;</h5>
+          <p>
+            Идеально подходит для ситуации &laquo;сделали продукт — а&nbsp;он&nbsp;не&nbsp;продаётся&raquo;.
+            Вы получаете завершённый документ с&nbsp;расписанными каналами продаж и&nbsp;продвижения, и&nbsp;конкретными шагами.
+          </p>
+          <p class="text-success custom-service-block-pricing">
+            От 70&nbsp;000 рублей.
+          </p>
+        </div>
+        <div class="col-md-4 ">
+          <h5 class="service-heading">Пакет &laquo;Терапия&raquo;</h5>
+          <p>
+            Работа профессионального психолога с&nbsp;установками, заложенными глубоко в&nbsp;подсознании, которые мешают вам развернуться в&nbsp;полную силу.
+          </p>
+          <p class="text-success custom-service-block-pricing">
+            От 25&nbsp;000 рублей.
+            <br>
+            Рассчитано на 3&nbsp;месяца.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="" id="experience" style="padding-bottom: 10px;" data-conversion-id="AW-982246509/rHLbCLvr7pgBEO3Ir9QD">
     <div class="container">
       <div class="row custom-section-header">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase text-truncate">Очередной инфобизнесмен?</h2>
-          <div class="section-icon"><i class="fas fa-tools fa-stack-2x text-primary"></i></div>
+          <h2 class="section-heading text-uppercase text-truncate">Кто я</h2>
+          <div class="section-icon"><i class="fas fa-magic fa-stack-2x text-primary"></i></div>
         </div>
       </div>
       <div class="row">
@@ -227,7 +482,8 @@
     </div>
   </section>
 
-  <section class="bg-light" id="how" data-conversion-id="AW-982246509/rHLbCLvr7pgBEO3Ir9QD">
+<!--
+  <section class="bg-light" id="how">
     <div class="container">
       <div class="row custom-section-header">
         <div class="col-lg-12 text-center">
@@ -247,25 +503,26 @@
       </div>
     </div>
   </section>
+  -->
 
   <section class="" id="business">
     <div class="container">
       <div class="row custom-section-header">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Нет, я не буду учить тебя делать бизнес</h2>
+          <h2 class="section-heading text-uppercase">Нет, я не буду учить вас делать бизнес</h2>
           <div class="section-icon"><i class="fas fa-lightbulb fa-stack-2x text-primary" style="font-size: 6em;"></i></div>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-5 text-left">
-          <p>Твой бизнес — твоё дело, и ты в нём эксперт. Никто лучше тебя не знает. Я лишь помогу тебе обойти щедро разбросанные типовые грабли, которые — поверь моему опыту — во&nbsp;всех компаниях одинаковые.</p>
-          <p>Я буду вынимать из твоей головы все говноубеждения, которые мешают раскрыть твой реальный потенциал — и потенциал всей компании. И подсказывать быстрые решения проблем, над которыми ты мог бы сидеть месяцами, раскидывая бабло на&nbsp;хождение по граблям.</p>
+          <p>Ваш бизнес — ваше дело, и вы в нём — эксперт. Никто лучше вас не знает. Я лишь помогу вам обойти щедро разбросанные типовые грабли, которые — поверьте моему опыту — во&nbsp;всех компаниях одинаковые.</p>
+          <p>Я буду вынимать из вашей головы все ложные убеждения, которые мешают раскрыть ваш реальный потенциал — и потенциал всей компании. И подсказывать быстрые решения проблем, над которыми вы могли бы сидеть месяцами, раскидывая бабло на&nbsp;хождение по граблям.</p>
         </div>
         <div class="col-lg-2 text-center">
         </div>
         <div class="col-lg-5 text-left">
-          <p>Я буду мешать твоим сотрудникам греться в&nbsp;уютных креслах, изображая бурную деятельность и изобретая велосипед за&nbsp;велосипедом. Ты внезапно начнёшь видеть, что организация может работать эффективнее.</p>
-          <p>Твой продукт перестанет ломаться на каждой презентации. Твои сотрудники начнут делать то, что ты от них на самом деле хочешь. К&nbsp;тебе в команду начнут приходить новые, сильные люди. Это воодушевляет!</p>
+          <p>Я буду мешать вашим сотрудникам греться в&nbsp;уютных креслах, изображая бурную деятельность и изобретая велосипед за&nbsp;велосипедом. Вы внезапно начнёте видеть, что организация может работать эффективнее.</p>
+          <p>Ваш продукт перестанет ломаться на каждой презентации. Ваши сотрудники начнут делать то, что вы от них на самом деле хотите. К&nbsp;вам в команду начнут приходить новые, сильные люди. Это воодушевляет!</p>
         </div>
       </div>
     </div>
@@ -276,7 +533,7 @@
     <div class="container">
       <div class="row custom-section-header">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Ты сможешь!</h2>
+          <h2 class="section-heading text-uppercase">Вы сможете больше!</h2>
           <div class="section-icon"><i class="fas fa-thumbs-up fa-stack-2x text-primary"></i></div>
         </div>
       </div>
@@ -284,7 +541,7 @@
         <div class="col-lg-2">
         </div>
         <div class="col-lg-8 text-center">
-          <p>Я подарю тебе вот это ощущение — что ты можешь больше. Что ты сможешь уходить из&nbsp;офиса раньше всех. Или вообще не приходить туда. А&nbsp;оно всё будет работать почти на автопилоте, под небольшим присмотром. А&nbsp;ты — выйдешь на новый уровень, будешь брать себе клиентов, о которых и не мечтал, будешь идти на новые рынки, которых боялся, запускать новые продукты, и&nbsp;чувствовать — что живёшь.</p>
+          <p>Я подарю вам вот это ощущение — что вы можете больше. Что вы сможете уходить из&nbsp;офиса раньше всех. Или вообще не приходить туда. А&nbsp;оно всё будет работать почти на автопилоте, под небольшим присмотром. А&nbsp;вы — выйдете на новый уровень, будете брать себе клиентов, о которых и не мечтали, будете идти на новые рынки, которых боялись, запускать новые продукты, и&nbsp;чувствовать — что живёте в полный рост.</p>
         </div>
         <div class="col-lg-2">
         </div>
@@ -293,6 +550,7 @@
   </section>
 
   <!-- Services -->
+  <!--
   <section class="" id="appropriate">
     <div class="container">
       <div class="row">
@@ -329,6 +587,7 @@
       </div>
     </div>
   </section>
+  -->
 
   <!-- Portfolio Grid -->
   <!--<section class="bg-light" id="portfolio">
@@ -429,12 +688,12 @@
   </section>-->
 
   <!-- About -->
-  <section id="process">
+  <section id="process" data-conversion-id="AW-982246509/SZiiCPa85ZgBEO3Ir9QD">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">Как это выглядит</h2>
-          <h3 class="section-subheading text-muted">Трекинг твоего прогресса</h3>
+          <h3 class="section-subheading text-muted">Это — трекинг вашего прогресса</h3>
         </div>
       </div>
       <div class="row">
@@ -507,32 +766,29 @@
     </div>
   </section>
 
-  <!-- Pricing -->
-  <section class="" id="pricing" data-conversion-id="AW-982246509/FM0eCPTG3JgBEO3Ir9QD">
+  <!-- Booking -->
+  <section class="" id="booking" data-conversion-id="AW-982246509/FM0eCPTG3JgBEO3Ir9QD">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Цены</h2>
-          <h3 class="section-subheading text-muted"></h3>
+          <h2 class="section-heading text-uppercase">Забронируйте время для звонка</h2>
+          <h3 class="section-subheading text-muted">Нажмите эту кнопку и выберите удобное вам время для того, чтобы созвониться и обсудить детали.</h3>
+          <div class="section-icon"><i class="fas fa-arrow-down fa-stack-2x text-primary" style="font-size: 6em;"></i></div>
         </div>
       </div>
       <div class="row text-center">
-        <div class="col-md-4">
+        <div class="col-lg-12 mx-auto" style="margin-top: 20px;">
+          <p><a class="btn btn-primary" href="/link/?url=https://dobryakov.youcanbook.me" id="booking-button" target="_blank" data-conversion-click-id="AW-982246509/p5Y4CJD45pgBEO3Ir9QD">Забронировать время</a></p>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-5 mx-auto">
           <h4 class="service-heading">Бесплатно</h4>
-          <p class="text-muted">Знакомство и&nbsp;первая консультация.</p>
+          <p class="text-muted">Знакомство и&nbsp;первая консультация.<br>Поговорим о&nbsp;вашем проекте и&nbsp;задачах.</p>
         </div>
-        <div class="col-md-4">
-          <h4 class="service-heading">$1500/месяц</h4>
-          <p class="text-muted">Ежедневное участие в&nbsp;работе команды до&nbsp;4-х&nbsp;часов в&nbsp;день.</p>
-        </div>
-        <div class="col-md-4">
+        <div class="col-md-5 mx-auto">
           <h4 class="service-heading">$50/час</h4>
-          <p class="text-muted">Для тех, кто хочет быстро начать.</p>
-        </div>
-      </div>
-      <div class="row text-center">
-        <div class="col-lg-12 mx-auto">
-          <p><a class="btn btn-primary" href="/link/?url=https://dobryakov.youcanbook.me" id="booking" target="_blank" data-conversion-click-id="AW-982246509/p5Y4CJD45pgBEO3Ir9QD">записаться на консультацию</a></p>
+          <p class="text-muted">Для тех, кто хочет быстро начать,<br>и&nbsp;позже подумать о&nbsp;приобретении пакета.</p>
         </div>
       </div>
     </div>
