@@ -53,7 +53,7 @@ function checkPosition(el) {
         gtag('event', 'conversion', {
             'send_to': conversion_id
         });
-        ga('send', 'event', 'scrolled-to', id);
+        gtag('event', 'scrolled-to', { 'event_category': id });
         ym(1926511, 'reachGoal', 'scrolled-to-' + id);
 
     } else {
@@ -74,7 +74,7 @@ function checkElementsVisible() {
         conversion_id = el.data('conversion-click-id');
         console.log(event, conversion_id);
         gtag('event', 'conversion', { 'send_to': conversion_id });
-        ga('send', 'event', 'click-to', id);
+        gtag('event', 'click-to', { 'event_category': id });
         ym(1926511, 'reachGoal', 'click-to-' + id);
     });
 
